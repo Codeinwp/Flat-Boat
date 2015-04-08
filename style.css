@@ -1,0 +1,107 @@
+/*
+ Theme Name:   Flat-Boat
+ Description:  Flat-Boat is a free theme which works nice for a personal blog, magazine, news or review website.
+ Author:       Themeisle
+ Author URI:   https://themeisle.com
+ Template:     FlatX
+ Version:      1.0.1
+ License:      GNU General Public License version 2
+ License URI:  license.txt
+ Tags:         black, white, orange, two-columns, left-sidebar, responsive-layout, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
+*/
+
+
+/*--------------------------------------------------------------
+	HEADER
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+	GENERAL
+--------------------------------------------------------------*/
+
+.hentry {
+    border-bottom: 1px solid #EEE;
+    padding: 60px 35px !important;
+    position: relative;
+}
+
+#page:before, .sidebar-offcanvas, #secondary { 
+	background-color: #c43c01 !important; 
+}
+
+.hentry .entry-title {
+    margin-top: 0px;
+    text-align: right !important;
+    font-size: 44px;
+}
+
+.hentry .entry-meta {
+    color: #777 !important;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: right !important; 
+}
+
+.hentry .tags-links a {
+    background: #535353 none repeat scroll 0% 0% !important;
+	color: #E1E1E1 !important;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+
+.hentry .entry-content, .hentry .entry-summary {
+    margin-top: 10px;
+    border-radius: 2px;
+    border: 1px solid #ECECEC !important;
+    padding: 10px;
+
+}
+
+#secondary a:hover, #secondary a:active {
+    color: #A89384 !important;
+}
+
+.nav-next{
+	background-color: #4D4A4A !important;
+}
+
+.published {
+	background: url("assets/img/date.png") 1px 2px no-repeat;
+	padding-left: 16px;
+}
+
+.author {
+	background: url("assets/img/user.png") 1px 2px no-repeat;
+	padding-left: 16px;
+}
+
+.comments-link {
+	background: url("assets/img/comm.png") 1px 2px no-repeat;
+	padding-left: 16px;
+}
+
+.pagination .page-numbers {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #545454 !important;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.625;
+    border-radius: 3px;
+    -moz-user-select: none;
+    outline: medium none !important;
+    color: #FFF;
+    background-color: #545454 !important;
+}
+
+/*--------------------------------------------------------------
+	FOOTER
+--------------------------------------------------------------*/
