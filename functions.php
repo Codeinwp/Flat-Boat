@@ -42,7 +42,7 @@ function flat_boat_customize_register( $wp_customize ) {
 			$wp_customize,
 			'ti-notify',
 			array( /* translators: Link to the recommended theme */
-				'text'     => sprintf( __( 'This theme is not maintained anymore, check-out our latest free one-page theme: %1$s.','Flat-Boat' ), sprintf( '<a href="' . admin_url( 'theme-install.php?theme=hestia' ) . '">%s</a>', 'Hestia' ) ),
+				'text'     => sprintf( __( 'This theme is not maintained anymore, consider using the parent theme %1$s or check-out our latest free one-page theme: %2$s.','Flat-Boat' ), sprintf( '<a href="' . admin_url( 'theme-install.php?theme=flat' ) . '">%s</a>', 'Flat' ), sprintf( '<a href="' . admin_url( 'theme-install.php?theme=hestia' ) . '">%s</a>', 'Hestia' ) ),
 				'priority' => 0,
 			)
 		)
@@ -69,7 +69,7 @@ function flat_boat_admin_notice() {
 
 	if ( is_admin() && ( 'themes.php' == $pagenow ) && isset( $_GET['activated'] ) ) {
 		echo '<div class="updated notice is-dismissible"><p>';
-		printf( /* translators: link to the recommended theme */ __( 'This theme is not maintained anymore, check-out our latest free one-page theme: %1$s.','Flat-Boat' ), sprintf( '<a href="' . admin_url( 'theme-install.php?theme=hestia' ) . '">%s</a>', 'Hestia' ) );
+		printf( __( 'This theme is not maintained anymore, consider using the parent theme %1$s or check-out our latest free one-page theme: %2$s.','Flat-Boat' ), sprintf( '<a href="' . admin_url( 'theme-install.php?theme=flat' ) . '">%s</a>', 'Flat' ), sprintf( '<a href="' . admin_url( 'theme-install.php?theme=hestia' ) . '">%s</a>', 'Hestia' ) );
 		echo '</p></div>';
 	}
 }
